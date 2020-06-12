@@ -1,17 +1,17 @@
 {
-  "name": "site-folder",
-  "version": "0.0.0",
+  "name": "map-kraeved",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build": "browserify ./bin/www -o ./bin/bundle.js",
-    "bundle": "node ./bin/bundle.js"
+    "build": "browserify ./views/geolayers.js > ./public/bundle.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "^4.16.4",
+    "georaster": "^0.5.4",
     "georaster-layer-for-leaflet": "^0.4.2",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
